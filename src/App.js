@@ -3,6 +3,6 @@ import * as Caso from './Ejemplos/Index';
 
 export const App = () => (
   <BrowserRouter>
-    <Caso.Basico />
+    <Caso.Simple />
   </BrowserRouter>
 );

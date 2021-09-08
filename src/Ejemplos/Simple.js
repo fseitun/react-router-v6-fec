@@ -1,5 +1,14 @@
 import React from 'react';
-import { Routes, Route, useLocation, useParams, Outlet, Link, useMatch } from 'react-router-dom';
+import {
+  Routes,
+  Route,
+  useLocation,
+  useParams,
+  Outlet,
+  Link,
+  useMatch,
+  useNavigate,
+} from 'react-router-dom';
 
 export function Simple() {
   return (
@@ -10,6 +19,7 @@ export function Simple() {
           <Route path='prueba' element={<Prueba />} />
           <Route path='/' element={<Home />} />
           <Route path='hola' element={<Hola />} />
+          <Route path='navigate' element={<Nav />} />
           <Route path='ul' element={<UseLocation />} />
         </Route>
       </Routes>
@@ -29,7 +39,8 @@ var Sociedad = () => {
   return (
     <>
       <Link to={`/${sociedad}`}>home</Link> | <Link to={`/${sociedad}/hola`}>hola</Link> |{' '}
-      <Link to={`/${sociedad}/ul`}>useLocation</Link>
+      <Link to={`/${sociedad}/ul`}>useLocation</Link> |{' '}
+      <Link to={`/${sociedad}/navigate`}>navigate</Link>
       <h4>Info de la empresa: {sociedad}</h4>
       <Outlet />
     </>
@@ -55,4 +66,18 @@ var Prueba = () => {
   let match = useMatch('5*');
   console.log(match);
   return `hola`;
+};
+
+var Nav = () => {
+  return (
+    <>
+      <h1>Soy el primer componente anidado</h1>
+      <SegundoAnidado />
+    </>
+  );
+};
+
+var SegundoAnidado = () => {
+  const navigate = useNavigate();
+  return <button onClick={() => navigate('/')}>onClick volver a home</button>;
 };
