@@ -8,4 +8,16 @@
 - [FAQ](https://github.com/remix-run/react-router/blob/dev/docs/faq.md)
 - [API Reach (lgunas cosas se heredan de ahí, ejemplo useMatch)](https://reach.tech/router/api/useMatch)
 - [Post Michael Jackson V6 alpha](https://reacttraining.com/blog/react-router-v6-pre/)
+
 ---
+
+# Propuesta de primeros métodos a encarar
+
+- [ ] [BrowserRouter](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#browserrouter)
+- [ ] [Routes](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#routes-and-route)
+- [ ] [Route](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#routes-and-route)
+- [ ] [Outlet](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#outlet)
+- [ ] [Link](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#link)
+- [ ] [useParams](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#useparams)
+- [ ] [useNavigate](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#usenavigate)
+- [ ] [useMatch](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#usematch)
