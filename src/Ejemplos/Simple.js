@@ -63,7 +63,7 @@ function UseLocation() {
 }
 
 var Prueba = () => {
-  let match = useMatch('5*');
+  let match = useMatch('empresa*');
   console.log(match);
   return `hola`;
 };
