@@ -13,13 +13,15 @@
 
 # Propuesta de primeros métodos a encarar
 
-- [ ] [BrowserRouter](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#browserrouter)
-- [ ] [Routes](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#routes-and-route)
-- [ ] [Route](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#routes-and-route)
-- [ ] [Outlet](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#outlet)
-- [ ] [Link](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#link)
+- [x] [BrowserRouter](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#browserrouter)
+- [x] [Routes](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#routes-and-route)
+- [x] [Route](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#routes-and-route)
+- [x] [Outlet](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#outlet)
+- [x] [useParams](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#useparams)
+- [x] [useNavigate](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#usenavigate)
+- [x] [useMatch](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#usematch)
+- [x] [Link](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#link)
 - [ ] [NavLink](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#navlink)
-- [ ] [useParams](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#useparams)
-- [ ] [useNavigate](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#usenavigate)
-- [ ] [useMatch](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#usematch)
 - [ ] [useLocation](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#uselocation)
+- [ ] [Navigate](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md)
+- [ ] [Prompt](https://github.com/remix-run/react-router/blob/dev/docs/api-reference.md#prompt)
