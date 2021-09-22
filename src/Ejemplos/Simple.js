@@ -16,7 +16,9 @@ export function Simple() {
       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path=':sociedad' element={<Sociedad />}>
-          <Route path='prueba' element={<Prueba />} />
+          <Route path='prueba' element={<Prueba />}>
+            <Route path=':id' element={<Landing />} />
+          </Route>
           <Route path='/' element={<Home />} />
           <Route path='hola' element={<Hola />} />
           <Route path='navigate' element={<Nav />} />
@@ -58,14 +60,24 @@ function UseLocation() {
           <li key={e[0]}>{`${e[0]}: ${e[1]}`}</li>
         ))}
       </ul>
+      <h4>{new URLSearchParams(a.search).get('name')}</h4>
     </>
   );
 }
 
 var Prueba = () => {
-  let match = useMatch('empresa*');
-  console.log(match);
-  return `hola`;
+  let match = useMatch(':auto/prueba/:id');
+  let location = useLocation()
+  let params = useParams()
+  console.log(params);
+  console.log(location);
+  console.log(match.params);
+  return (
+    <>
+      {match ? `hola ${match.params.id}` : `no-match ${match.params.id}`}
+      <Outlet />
+    </>
+  );
 };
 
 var Nav = () => {
