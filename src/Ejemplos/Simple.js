@@ -53,6 +53,17 @@ var Hola = () => 'hola!';
 
 function UseLocation() {
   let a = useLocation();
+  //El useLocation nos devuelve un objeto con las claves: pathname, search, hash, state y key.
+  //ej de ruta: localhost:3000/rodri/ul?name=rodri&age=2
+
+  //pathname: nos devuelve /rodri/ul
+
+  //search: nos devuelve los parametros de busqueda que tenga la url, ej: ?name=rodri&age=2
+  //Si queremos tomar los valores de ese parametros podemos hacer:
+  const name = new URLSearchParams(a.search).get('name')
+  const age = new URLSearchParams(a.search).get('age')
+
+  console.log(a)
   return (
     <>
       <ul>
@@ -60,7 +71,7 @@ function UseLocation() {
           <li key={e[0]}>{`${e[0]}: ${e[1]}`}</li>
         ))}
       </ul>
-      <h4>{new URLSearchParams(a.search).get('name')}</h4>
+      <h4>{name} - {age}</h4>
     </>
   );
 }
